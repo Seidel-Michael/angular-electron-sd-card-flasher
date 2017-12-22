@@ -1,25 +1,9 @@
 import {Component} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
-<<<<<<< HEAD
 
 import {ImageSourceFtp} from '../lib/image-source-ftp';
 
 import {ElectronService} from './providers/electron.service';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-})
-export class AppComponent {
-  constructor(
-      public electronService: ElectronService,
-      private translate: TranslateService) {
-    translate.setDefaultLang('en');
-=======
-
-import {ElectronService} from './providers/electron.service';
->>>>>>> b22d9787016dc1edeea0715d6d7516b3071c7167
 
 @Component({selector: 'app-root', templateUrl: './app.component.html', styleUrls: ['./app.component.scss']})
 export class AppComponent {
@@ -55,6 +39,5 @@ export class AppComponent {
             console.log(error);
           });
     });*/
-
   }
 }
