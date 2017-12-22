@@ -1,5 +1,8 @@
-<div class="container">
-  <h1 class="title">
-    {{ 'PAGES.HOME.TITLE' | translate }}
-  </h1>
-</div>
+<mat-toolbar>
+  <span>SD Card Flasher</span>
+</mat-toolbar>
+<mat-grid-list cols="3" rowHeight="200px">
+  <mat-grid-tile *ngFor="let image of images" [colspan]="1">
+    <app-flash buildName="{{image.buildName}}" currentImage="{{image.currentImage}}"></app-flash>
+  </mat-grid-tile>
+</mat-grid-list>
